@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about {
+    background-color: #fff;
+    color: #333;
+}
+
+#projects {
+    background-color: #e4e4e4;
+}
+
+.project {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Skills Section */
+#skills {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Skill List */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Skill */
+.skill {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Skill Bar */
+.skill-bar {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    transition: width 1s ease;
+}
+
+/* Specific Skill Levels (width values for progress bars) */
+.html {
+    width: 90%;
+    background-color: #e44d26; /* HTML color */
+}
+
+.css {
+    width: 85%;
+    background-color: #264de4; /* CSS color */
+}
+
+.js {
+    width: 80%;
+    background-color: #f7df1e; /* JavaScript color */
+}
+
+.react {
+    width: 70%;
+    background-color: #61dafb; /* React color */
+}
+
+.git {
+    width: 75%;
+    background-color: #f1502f; /* Git color */
+}
+
+.uiux {
+    width: 65%;
+    background-color: #9b59b6; /* UI/UX color */
+}
+
+/* Hover effect for skill bar */
+.skill-bar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the image is responsive and maintains aspect ratio */
+img {
+    max-width: 10%; /* Makes the image responsive */
+    height: 20;    /* Keeps the aspect ratio intact */
+    display: block;  /* Removes space below the image */
+    margin: 0 auto;  /* Centers the image horizontally */
+    border-radius: 10px; /* Optional: Adds rounded corners for a modern look */
+    animation: fadeIn 1.5s ease-in-out forwards; /* Animation to fade in the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+/* Fade in animation when the page loads */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start with a slight downward position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End in the original position */
+    }
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect when hovered */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
